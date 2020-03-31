@@ -1,8 +1,8 @@
 # This feature tests actions within Admin Interface, specifically operations with Products Catalog
-Feature: Product Catalog
+Feature: Admin Product Catalog
 
 
-    Scenario: Filter by name
+    Scenario Outline: Filter by name
         Given administrator is in product catalog
         When administrator fills out Product Name box with "<product>"
         Then "<product>" should be in product list
@@ -10,9 +10,10 @@ Feature: Product Catalog
         Examples:
             |   product    |
             | iPod Classic |
+            |  HP LP3065   |
 
 
-    Scenario: Filter by price
+    Scenario Outline: Filter by price
         Given administrator is in product catalog
         When administrator fills out Price box with "<prize>"
         Then only products which price is "<prize>" will be in product list
@@ -23,7 +24,7 @@ Feature: Product Catalog
             |   0   |
 
 
-    Scenario: Filter with zero results
+    Scenario Outline: Filter with zero results
         Given administrator is in product catalog
         When administrator sets status to "<status>"
         And all items have opposite status "<status2>"
@@ -41,7 +42,7 @@ Feature: Product Catalog
         Then only products which are out of stock are shown
 
 
-    Scenario: Edit product's name
+    Scenario Outline: Edit product's name
         Given administrator is in product catalog
         And product catalog is not empty
         When administrator click on Edit button to edit "<product>"
@@ -56,7 +57,7 @@ Feature: Product Catalog
             |       ajfon fajf        |         iPhone 5        |
 
 
-    Scenario: Delete one product
+    Scenario Outline: Delete one product
         Given administrator is in product catalog
         And product catalog is not empty
         When administrator checks a checkbox next to "<product>"'s image
@@ -69,7 +70,7 @@ Feature: Product Catalog
             | iPod Touch |
             |    iMac    |
 
-            
+
     Scenario: Delete all products
         Given administrator is in product catalog
         And no filters are set
