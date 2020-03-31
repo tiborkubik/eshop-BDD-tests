@@ -1,5 +1,5 @@
 ## Test scenarios for ITS/2019L course
-Author: Tibor Kubik(xkubik34@stud.fit.vutbr.cz)
+Author: Tibor Kubik(xkubik34@stud.fit.vutbr.cz)\
 This test plan contains 4 different test suites, each focusing on different element of OpenCart e-shop. I have decided to focus on wider range of elements rather then just one. That is also the goal of my test plan - to test more parts in a superficial way.
 
 Test plan contains following features:
