@@ -11,7 +11,7 @@ Feature: User registration
 
 
     Scenario: Unsuccessful account registration - e-mail is invalid
-        Given: user is on registration page
+        Given user is on registration page
         When user fills out invalid e-mail address
         And fills out the rest of required boxes
         And accepts terms of privacy policy
