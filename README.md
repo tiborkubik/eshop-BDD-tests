@@ -8,19 +8,19 @@ Test plan contains following features:
 - wishlist.feature
 - admin_products.feature
 
-# User registration feature
+### User registration feature
 User registration feature contains scenarios testing the process of registration of a **new** user. Most of the scenarios are trying to detect whether system does not allow to register a new user, when he/she does not follow registration instructions.
 
-# Shopping Cart feature
+### Shopping Cart feature
 This feature tests actions with shopping cart. As shopping cart is a crucial in the process of product order, feature tests actions like:
 - Adding a new item to Shopping Cart
 - Changing the quantity of an item
 - Deleting one item or all items
 
-# Wish List feature
+### Wish List feature
 Wish List is a non-essential part of an e-shop. That means, that even during implementation, plenty of bugs might have been created due to the idea that this module is unimportant. That is the reason why I have decided to test this part. Especially adding new item to a Wish List, redirecting from Wish List to a product, removing an item from a Wish list and remove everything from a Wish List.
 
-# Admin Product Catalog feature
+### Admin Product Catalog feature
 This feature tests actions within product catalog that is modifiable by an administrator. As the product list is being changed constantly in an e-shop, I have decided to test these operations that admin can do:
 - Filtration of products within list by number of filters
 - Removing a product
