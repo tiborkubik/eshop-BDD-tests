@@ -21,7 +21,7 @@ This feature tests actions with shopping cart. As shopping cart is a crucial in 
 Wish List is a non-essential part of an e-shop. That means, that even during implementation, plenty of bugs might have been created due to the idea that this module is unimportant. That is the reason why I have decided to test this part. Especially adding new item to a Wish List, redirecting from Wish List to a product, removing an item from a Wish list and remove everything from a Wish List.
 
 ### Admin Product Catalog feature
-This feature tests actions within product catalog that is modifiable by an administrator. As the product list is being changed constantly in an e-shop, I have decided to test these operations that admin can do:
+This feature tests actions within product catalog that is modifiable by an administrator. As the product list is being changed constantly in an e-shop, actions performed with it must be bug-free. I have decided to test these operations that admin can do:
 - Filtration of products within list by number of filters
 - Removing a product
 - Removing all products
