@@ -1,12 +1,13 @@
 ## Test scenarios for ITS/2019L course
 Author: Tibor Kubik(xkubik34@stud.fit.vutbr.cz)\
-This test plan contains 4 different test suites, each focusing on different element of OpenCart e-shop. I have decided to focus on wider range of elements rather then just one. That is also the goal of my test plan - to test more parts in a superficial way.
+This test plan contains 5 different test suites, each focusing on different element of OpenCart e-shop. I have decided to focus on wider range of elements rather then just one. That is also the goal of my test plan - to test more parts in a superficial way.
 
 Test plan contains following features:
 - registration.feature
 - shopping_list.feature
 - wishlist.feature
 - admin_products.feature
+- admin_extensions.feature
 
 ### User registration feature
 User registration feature contains scenarios testing the process of registration of a **new** user. Most of the scenarios are trying to detect whether system does not allow to register a new user, when he/she does not follow registration instructions.
@@ -26,3 +27,6 @@ This feature tests actions within product catalog that is modifiable by an admin
 - Removing a product
 - Removing all products
 - Editing a product
+
+### Admin Extensions feature
+Feature tests operations with e-shop extensions, specifically with Analytics and Captcha. Nevertheless this feature contains only two scenarios, it revealed a bug when Google Analytics is being edited. This is the last feature I have implemented and adds in two more scenarios to the whole testing suite resulting in 22 scenarios in total.
